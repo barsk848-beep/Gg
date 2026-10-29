@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="@color/menu_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Standoff 2 Cheat Menu"
+            android:textColor="@color/text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Root: проверяется при запуске"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:id="@+id/rootStatus" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="12dp"
+            android:background="#333333" />
+
+        <Switch
+            android:id="@+id/aimSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aim Assist"
+            android:textColor="@color/text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="FOV"
+            android:textColor="@color/text" />
+        <SeekBar
+            android:id="@+id/aimFovSeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="180"
+            android:progress="90" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Smooth"
+            android:textColor="@color/text" />
+        <SeekBar
+            android:id="@+id/aimSmoothSeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="20"
+            android:progress="5" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="12dp"
+            android:background="#333333" />
+
+        <Switch
+            android:id="@+id/espSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ESP"
+            android:textColor="@color/text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="12dp"
+            android:background="#333333" />
+
+        <Switch
+            android:id="@+id/noRecoilSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Recoil"
+            android:textColor="@color/text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Recoil Multiplier x100"
+            android:textColor="@color/text" />
+        <SeekBar
+            android:id="@+id/recoilSeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0" />
+
+        <Button
+            android:id="@+id/closeMenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Закрыть меню" />
+    </LinearLayout>
+</ScrollView>
